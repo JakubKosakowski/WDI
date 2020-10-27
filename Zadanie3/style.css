@@ -1,0 +1,51 @@
+.content{
+    color:#333;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: #E6E6E6;
+    padding: 5px;
+}
+.imie{
+    background-color: #2C6700;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    color: white;
+}
+.stopka{
+    background-color: #FFCF99;
+    text-align: center;
+    padding: 5px;
+}
+img{
+    border: 3px solid #9fff80;
+    padding: 2px;
+}
+.spis{
+    border: 2px solid black;
+    padding: 3px;
+    background-color: #92CD00;
+    color: black;
+    text-decoration: none;
+}
+.spis:hover{
+    background-color: #FFCF99;
+}
+.grupa{
+    display: inline;
+    font-size: 25px;
+}
+table{
+    width: 100%;
+}
+th{
+    background-color: #92CD00;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    border-bottom: 3px dotted #92CD00;
+}
+ul{
+    list-style-image: url('lista.png');
+}
