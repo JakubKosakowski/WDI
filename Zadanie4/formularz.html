@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" type="text/css" href="formularz.css">
+</head>
+<body>
+    <div id = "container">
+        <header id = "naglowek">
+            Oldtimer Club
+            <img src = "LOGO.jpg">
+        </header>
+        <div id ="srodek">
+            <nav id = "nawigacja">
+                <a href = "#"><b>Główna</b></a><br/>
+                <a href = "#"><b>Giełda</b></a><br/>
+                <a href = "#" id = "kontakt"><b>Kontakt</b></a>
+            </nav>
+            <section id = "tresc">
+                <form action="http://info.wsisiz.edu.pl/~zawadzkp/skrypt.php"
+                method="post">
+                    <table>
+                        <tr >
+                            <td colspan="2"><h2><b>Formularz dodawania ogłoszenia</b></h2></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Marka:
+                            </td>
+                            <td>
+                                <input type = "text" name = "marka" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Model:
+                            </td>
+                            <td>
+                                <input type = "text" name = "model" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Rok:
+                            </td>
+                            <td>
+                                <input type = "text" name = "rok" placeholder="Rok"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Silnik:
+                            </td>
+                            <td>
+                                <input type = "radio" name = "silnik" value="benzyna"/>Benzyna
+                                <input type = "radio" name = "silnik" value="diesel"/>Diesel
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Wyposażenie:
+                            </td>
+                            <td>
+                                <input type = "checkbox" name = "wyp[]" value = "klimatyzacja"/>Klimatyzacja<br/>
+                                <input type = "checkbox" name = "wyp[]" value = "ABS"/>ABS<br/>
+                                <input type = "checkbox" name = "wyp[]" value = "wspomaganie"/>Wspomaganie kierownicy
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Stan ogólny:
+                            </td>
+                            <td>
+                            <select name = "stan">
+                                <option value = "Zły">Zły</option>
+                                <option value = "Średni">Średni</option>
+                                <option value = "Dobry">Dobry</option>
+                                <option value = "Bardzo Dobry">Bardzo dobry</option>
+                                <option value = "Idealny">Idealny</option>
+                            </select> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Opis:
+                            </td>
+                            <td>
+                            <textarea name = "opis" cols = "30" rows = "5">
+                            </textarea>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td colspan="2">
+                                <input type = "submit" value = "Wyślij" id = "button"/>
+                                <input type = "reset" value = "Reset" id = "button"/> 
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

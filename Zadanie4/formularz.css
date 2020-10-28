@@ -1,0 +1,55 @@
+body{
+    background-color: #FFFFB3;
+}
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#naglowek{
+    background-color: green;
+    font-size: 80px;
+    min-height: 150px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    float: right;
+    vertical-align: top;
+}
+#nawigacja {
+    width: 100px;
+    min-height: 530px;
+    background-color: green;
+    float: left;
+    text-align: center;
+    padding: 3px;
+    padding-bottom: 15px;
+}
+#srodek {
+    min-height: 550px;
+    background-color: #FFFFCC;
+    margin-top: 1px;
+}  
+a{
+    display: table;
+    width: 90%;
+    padding: 5px;
+    background-color: #FFFFCC;
+    color: black;
+    font-size: 20px;
+} 
+tr,td{
+    background-color: green;
+    width: 200px;
+}
+table{
+    padding: 50px;
+    margin: 0 auto;
+}
+#button{
+    margin-left: 75px;
+    width: 100px;
+}
+#kontakt{
+    margin-top: 350px;
+}
