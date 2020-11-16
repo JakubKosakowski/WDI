@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zgłoszenie</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id = "container">
+        <header id = "naglowek">
+            <h1>Zgłoszenie</h1>
+        </header>
+        <br/>
+        <nav id = "nawigacja">
+            <a href = "index.html" target = "_blank">Strona główna</a>  <a href = "zgloszenie.html" target = "_blank"><b>Zgłoszenie</b></a>  <a href = "#" target = "_blank">Galeria</a>
+        </nav>
+        <div id = "sroder">
+            <br/>
+            <section id = "newsy">
+                <h1 style = "color: white;">Newsy</h1>
+                <br/>
+                <b>Lorem</b><br/> ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar ipsum at accumsan eleifend.<br/><br/>
+                <b>Ipsum</b><br/>dolor sit amet, consectetur adipiscing elit. Donec pulvinar ipsum at accumsan eleifend.<br/><br/><br/>
+                <b>Ipsum</b><br/>dolor sit amet, consectetur adipiscing elit. Donec pulvinar ipsum at accumsan eleifend.
+            </section>
+            <section id = "tresc">
+                <h1>Zapisz się</h1>
+                <br/>
+                <br/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar ipsum at accumsan eleifend. Ut rutrum, libero at sagittis pharetra, mi leo fermentum est, sed auctor est ipsum viverra eros. Vestibulum semper ex at ex sodales, vitae molestie nisl consequat. Donec feugiat, neque non pulvinar sollicitudin, ligula libero sodales libero, sed fermentum tortor mauris vel urna. Aliquam convallis, magna at elementum condimentum, nisl ante gravida tellus, ac pharetra nibh nunc vitae purus. Aenean tincidunt urna nec semper viverra. Nulla vitae efficitur nunc. Aenean consequat varius dui, non sollicitudin erat pretium sed. </p>
+                <form action="http://info.wsisiz.edu.pl/~zawadzkp/skrypt.php"
+                method="post">
+                <table>
+                <tr>
+                    <td>
+                        Imię:
+                    </td>
+                    <td>
+                        <input type = "text" name = "imie" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nazwisko:
+                    </td>
+                    <td>
+                        <input type = "text" name = "nazwisko" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        <input type = "email" name = "email" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Płeć
+                    </td>
+                    <td>
+                        <input type = "radio" name = "plec" value="K"/>K ,
+                        <input type = "radio" name = "plec" value="M"/>M
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Prawo jazdy kategoria:
+                    </td>
+                    <td>
+                        <input type = "checkbox" name = "PJ[]" value = "A"/>A ,
+                        <input type = "checkbox" name = "PJ[]" value = "B"/>B ,
+                        <input type = "checkbox" name = "PJ[]" value = "C"/>C
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Praca
+                    </td>
+                    <td>
+                       <select name = "Praca">
+                           <option value = "Student">Student</option>
+                           <option value = "Bezrobotny">Bezrobotny</option>
+                           <option value = "Kebab w Kołobrzegu">Kebab w Kołobrzegu</option>
+                       </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Podanie:
+                    </td>
+                    <td>
+                       <textarea name = "Podanie" cols = "30" rows = "5">
+                       </textarea>
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="2">
+                        <input type = "submit" value = "Wyślij"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+            </section>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <footer id = "stopka">Jakub Kosakowski, ID03P04</footer>
+    </div>
+</body>
+</html>

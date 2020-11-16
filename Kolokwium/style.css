@@ -1,0 +1,63 @@
+body{
+    background-image: url("tlo_strony.gif");
+}
+#container{
+    margin: 0 auto;
+    width: 1200px;
+    height: 830px;
+    padding: 10px;
+    background-color: white;
+}
+#naglowek{
+    text-align: left;
+    margin: 0 auto;
+    height:200px;
+    width: 1180px;
+    padding: 10px; 
+    background-image: url("naglowek.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+#nawigacja{
+    margin: 0 auto;
+    background-color: #f9d879;
+    padding: 5px;
+}
+a{
+    font-family: Verdana;
+    font-size: 11px;
+    padding: 5px;
+    color:  #e03b66;
+    text-decoration: none;
+}
+#srodek{
+    display: flex;
+}
+#newsy{
+    float: right;
+    padding: 5px;
+    font-family: Verdana;
+    color: #e03b66;
+    max-width: 100px;
+    min-height: 470px;
+    font-size: 10px;
+    background-color: #f4d7ad;
+}
+#tresc{
+    color:#333;
+    font-family: 'Trebuchet MS';
+    font-size: 11px;
+    padding: 5px;
+    width: 700px;
+}
+#stopka{
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #f9d879;
+    color:  #e03b66;
+    text-align: right;
+}
+tr{
+    background-color:#f9f2ec;
+}
