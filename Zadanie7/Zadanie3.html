@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Zadanie 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+
+		// ustawia kolor tła wiersza tabeli o danym indeksie
+		function pokoloruj(index) {
+			const tabela = document.getElementById("tabela")
+
+			tabela.rows[index].style.backgroundColor = "yellow"
+		}
+
+		// pobiera zawartość pola tekstowego i dodaje określoną liczbę wierszy do tabeli.
+		function dodajWiersz() {
+			var dodajWierszy = parseInt(document.getElementById("liczba_wierszy").value)
+			var tabela = document.getElementById("tabela")
+			var liczbaWierszy = tabela.rows.length
+
+			for (var i = liczbaWierszy; i < liczbaWierszy + dodajWierszy; i++) {
+				tabela.insertRow(i)
+				tabela.rows[i].innerHTML = `
+					<td>${i}</td>
+					<td>marka</td>
+					<td>model</td>
+					<td>rok</td>
+					<td>
+						<button type='button' data-index='${i}'>Koloruj</button>
+					</td>
+				`
+			}
+		}
+
+		function pokolorujNieparzyste(){
+			var elementy_tabeli = document.getElementsByTagName("table") ;
+			for(var j = 0; j < elementy_tabeli.length; j++)
+			{
+				var tabela = elementy_tabeli[j] ;
+
+				var rzad = tabela.getElementsByTagName("tr") ;
+				for(var i = 0; i <= rzad.length; i++)
+				{
+					if(i%2==1){
+						rzad[i].style.backgroundColor = "orange" ;
+					}
+				}
+			}
+}
+
+		window.onload = function () {
+			document.getElementById('tabela').addEventListener('click', function (e) {
+				if (e.target.nodeName == "BUTTON") {
+					const index = e.target.getAttribute('data-index')
+					pokoloruj(index)
+				}
+			});
+
+			document.getElementById('dodaj_wiersz').onclick = dodajWiersz
+			document.getElementById('pokoloruj_nieparzyste').onclick = pokolorujNieparzyste
+		}
+	</script>
+</head>
+
+<body>
+	<table id="tabela" style="width: 350px;">
+		<tr>
+			<th>Lp</th>
+			<th>Marka</th>
+			<th>Model</th>
+			<th>Rok</th>
+			<th>&nbsp;</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Fiat</td>
+			<td>Punto</td>
+			<td>1999</td>
+			<td><button type="button" data-index="1">Koloruj</button></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Audi</td>
+			<td>80</td>
+			<td>1990</td>
+			<td><button type="button" data-index="2">Koloruj</button></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Volkswagen</td>
+			<td>Passat</td>
+			<td>2002</td>
+			<td><button type="button" data-index="3">Koloruj</button></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Subaru</td>
+			<td>Impreza</td>
+			<td>1997</td>
+			<td><button type="button" data-index="4">Koloruj</button></td>
+		</tr>
+	</table>
+	<br />
+
+	Dodaj <input type="text" name="liczba_wierszy" id="liczba_wierszy" size="2" /> wierszy do tabeli.
+	<input type="button" name="dodaj_wiersz" id="dodaj_wiersz" value="Dodaj wiersz" /><br/>
+	<input type="button" name="pokoloruj_nieparzyste" id="pokoloruj_nieparzyste" value="Pokoloruj Nieparzyste" />
+</body>
+
+</html>

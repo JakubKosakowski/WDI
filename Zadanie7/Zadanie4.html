@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id = "tytul"></title>
+	<meta charset="utf-8" />
+	<script>
+		let czyKlikniety = 0;
+
+		function wspolrzedneKursora(event) {
+			x = event.clientX
+			y = event.clientY
+			document.getElementById("tytul").innerHTML = "X: "+ x + " Y: " + y;
+			if(y <= 100){
+				document.body.style.backgroundColor = "lime";
+			}
+			else if(y > 100 && y <= 200){
+				document.body.style.backgroundColor = "pink";
+			}
+			else{
+				document.body.style.backgroundColor = "orange";
+			}
+			if (czyKlikniety == 1) {
+				document.getElementById('zdjecie').style.position = "absolute"
+				document.getElementById('zdjecie').style.top = (y - 20) + "px"
+				document.getElementById('zdjecie').style.left = (x - 20) + "px"
+			}
+		}
+
+		function przesunPoKliknieciu() {
+			if (czyKlikniety == 0) {
+				czyKlikniety = 1
+				document.getElementById('zdjecie').style.border = "10px dotted blue"
+			} else {
+				czyKlikniety = 0
+				document.getElementById('zdjecie').style.border = "10px dotted red"
+			}
+		}
+
+		window.onload = () => {
+			document.body.onmousemove = e => wspolrzedneKursora(e)
+			document.getElementById('zdjecie').onclick = przesunPoKliknieciu
+		}
+	</script>
+</head>
+
+<body>
+	<img src="oo.jpg" id="zdjecie" />
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 5</title>
+    <script>
+        async function pobierzKolory() {
+            const resp = await fetch('kolory.json')
+            const kolory = await resp.json()
+
+            let html = `<ul>`
+            for (k in kolory) {
+                html += `
+                    <li style = "color: ${kolory[k]};">
+                        ${k} (${kolory[k]})
+                    </li>
+                `
+            }
+            html += `</ul>`
+
+            document.getElementById('kolory').innerHTML = html
+        }
+
+        window.onload = () => {
+            document.getElementById('pobierz').onclick = pobierzKolory
+        }
+    </script>
+</head>
+
+<body>
+    <button id="pobierz">Pobierz kolory</button>
+    <div id="kolory"></div>
+</body>
+
+</html>

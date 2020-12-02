@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Zadanie 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		// ustawia kolor tła wiersza tabeli o danym indeksie
+		var color = 0
+		function pokoloruj() {
+			const tabela = document.getElementById("tabela")
+			const index = this.getAttribute('data-index')
+			if(color % 2 == 0){
+				tabela.rows[index].style.backgroundColor = "yellow"
+				++color
+			}
+			else{
+				tabela.rows[index].style.backgroundColor = "white"
+				++color
+			}
+		}
+
+		window.onload = function () {
+			const buttons = document.getElementsByTagName('button')
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].onclick = pokoloruj
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<table id="tabela" style="width: 350px;">
+		<tr>
+			<th>Lp</th>
+			<th>Marka</th>
+			<th>Model</th>
+			<th>Rok</th>
+			<th>&nbsp;</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Fiat</td>
+			<td>Punto</td>
+			<td>1999</td>
+			<td><button type="button" data-index="1">Koloruj</button></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Audi</td>
+			<td>80</td>
+			<td>1990</td>
+			<td><button type="button" data-index="2">Koloruj</button></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Volkswagen</td>
+			<td>Passat</td>
+			<td>2002</td>
+			<td><button type="button" data-index="3">Koloruj</button></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Subaru</td>
+			<td>Impreza</td>
+			<td>1997</td>
+			<td><button type="button" data-index="4">Koloruj</button></td>
+		</tr>
+	</table>
+</body>
+
+</html>
