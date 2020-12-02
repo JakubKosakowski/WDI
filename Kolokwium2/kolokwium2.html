@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Wprowadzenie do internetu - kolokwium 2</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				font-family: verdana;
+				font-size: 13px;
+				color: #297bc7;
+				background-color: #fcfcfc;
+				padding-top: 50px;
+				padding-bottom: 20px;
+			}
+			
+			#kontener {
+				width: 1000px;
+				margin: 0 auto;
+			}
+			
+			/*********** NAWIGACJA ***********/
+			
+			nav ul {
+				list-style-type: none;
+			}
+			
+			nav li {
+				display: inline-block;
+			}
+			
+			nav a {
+				display: block;
+				font-size: 1.8em;
+				text-decoration: none;
+				padding: 5px;
+			}
+			
+			nav a.link1 {
+				border: 2px solid #48B413;
+				border-radius: 5px;
+				color: #48B413;
+				background-color: #BEFAA2;
+			}
+			
+			nav a.link1:hover {
+				background-color: #48B413;
+				color: #fff;
+			}
+			
+			nav a.link2 {
+				border: 2px solid #CF0A7E;
+				border-radius: 5px;
+				color: #CF0A7E;
+				background-color: #FEB6D1;
+			}
+			
+			nav a.link2:hover {
+				background-color: #CF0A7E;
+				color: #fff;
+			}
+			
+			nav a.link3 {
+				border: 2px solid #DD7E22;
+				border-radius: 5px;
+				color: #DD7E22;
+				background-color: #FFC8A9;
+			}
+			
+			nav a.link3:hover {
+				background-color: #DD7E22;
+				color: #fff;
+			}
+			
+			/*********** ŚRODEK ***********/
+			
+			#srodek {
+				border: 3px solid #297BC7;
+				border-radius: 5px;
+				background-color: #93C5F6;
+				padding: 10px;
+				margin-top: 5px;
+				overflow: auto;
+			}
+			
+			#srodek p {
+				padding: 5px;
+				margin-bottom: 5px;
+				text-align: justify;
+			}
+			
+			#srodek article {
+				float: left;
+				width: 70%;
+				margin-bottom: 10px;
+				background-color: #CEE6FE;
+				border-radius: 5px;
+				padding: 10px;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			
+			/*********** PASEK BOCZNY ***********/
+			
+			#srodek aside {
+				float: right;
+				width: 29%;
+			}
+			
+			#srodek aside img {
+				width: 283px;
+				border-radius: 5px;
+				display: block;
+				margin-bottom: 20px;
+			}
+			
+			#form {
+				color: #000;
+			}
+			
+			#form td  {
+				vertical-align: top;
+				padding-bottom: 10px;
+			}
+			
+			#form select {
+				width: 152px;
+			}
+			
+			#form input[type="text"] {
+				width: 150px;
+			}
+			
+			/*********** STOPKA ***********/
+			
+			#srodek footer {
+				clear: both;
+				background-color: #CEE6FE;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+		</style>
+		<script type = "text/javascript">
+			var rozmiar = 13;
+
+			function zmienObraz(){
+				if(document.getElementById('obraz').value == ""){
+					document.getElementById('zdjecie').src = "zdjecie.jpg"
+				}
+				else{
+				document.getElementById('zdjecie').src = document.getElementById('obraz').value;
+				}
+        	}
+
+			function zwiekszRozmiar(){
+				++rozmiar;
+				var x = rozmiar + "px";
+				document.body.style.fontSize = x;
+				document.getElementById('czcionka_aktualny_rozmiar').innerHTML = x;
+			}
+
+			function zmniejszRozmiar(){
+				--rozmiar;
+				var d = rozmiar + "px";
+				document.body.style.fontSize = d;
+				document.getElementById('czcionka_aktualny_rozmiar').innerHTML = d;
+			}		
+
+			function dodajKolor(){
+			const lista = document.getElementById("tlo")
+            const opcja = document.createElement("option")
+            const wartosc = document.getElementById('dodaj_kolor').value
+			if(wartosc != ""){
+				opcja.text = wartosc
+				opcja.value = wartosc
+				lista.add(opcja,null)
+			}
+
+			}
+
+			function zmienTlo(){
+				document.getElementById('tekst').style.backgroundColor = this.value
+			}
+
+			window.onload = function(){
+				document.getElementById("btn_ustaw_obraz").onclick = zmienObraz
+				document.getElementById("btn_czcionka_zwieksz").onclick = zwiekszRozmiar
+				document.getElementById("btn_czcionka_zmniejsz").onclick =zmniejszRozmiar
+				document.getElementById("btn_dodaj_kolor").onclick = dodajKolor
+				document.getElementById('tlo').onchange = zmienTlo
+			}
+
+		</script>
+	</head>
+	<body>
+		<section id="kontener">
+			<nav>
+				<ul>
+					<li><a href="#" class="link1">Link 1</a></li>
+					<li><a href="#" class="link2">Link 2</a></li>
+					<li><a href="#" class="link3">Link 3</a></li>
+				</ul>
+			</nav>
+			
+			<section id="srodek">
+				<article id="tekst">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat dui id quam scelerisque blandit. Donec porttitor felis nisi, in porta arcu maximus laoreet. Aenean mollis, odio sit amet tempus fringilla, nisl tortor bibendum dui, vulputate eleifend orci dolor nec mauris. Aliquam eget tempus purus. Pellentesque nec eleifend lacus, aliquet dictum purus. Vestibulum eu gravida mauris. Etiam id arcu et enim rhoncus rhoncus id auctor nunc. Nam sed dui ex. Duis molestie nisi id tortor accumsan lobortis eget in ipsum. Quisque nec finibus velit. Vivamus iaculis lorem ut scelerisque condimentum. Vestibulum finibus euismod tempor. Nulla facilisi. </p>
+					<p> Praesent vitae elit scelerisque, lacinia orci sit amet, eleifend odio. Vestibulum arcu quam, consectetur sit amet tellus nec, venenatis scelerisque metus. Duis imperdiet diam nec ante dapibus euismod. Pellentesque lobortis quam eget arcu feugiat, id venenatis ligula sodales. Aenean ac arcu at felis tempor fringilla a facilisis nulla. Mauris ipsum est, lacinia non tincidunt et, faucibus vitae odio. Phasellus augue lectus, ultrices et tortor in, dictum aliquam ipsum. Pellentesque est nisl, vulputate pharetra rutrum non, aliquam nec neque. Duis fringilla leo a nunc vulputate porta. Maecenas at magna a nulla bibendum eleifend. Cras interdum eleifend leo id mollis. Sed dapibus mattis nisi, ac varius dolor scelerisque id. Donec tortor nibh, cursus in dolor ut, pharetra aliquet neque. In vel felis tincidunt, tristique lorem euismod, ornare nulla. Ut pretium libero a lobortis tempus. Cras turpis purus, facilisis in aliquam vitae, blandit vestibulum tortor. </p>
+					<p> Praesent ut ipsum id massa fermentum sollicitudin in eget eros. Quisque scelerisque luctus lorem. Nam vel sapien lacus. Nam vel urna cursus, rutrum sapien et, cursus tellus. Curabitur aliquet aliquet neque. Quisque congue quis nunc egestas vehicula. Cras pulvinar, odio nec rutrum pretium, est leo auctor ex, vel pulvinar dui enim eget lorem. Phasellus non odio nisl. Quisque condimentum nisi a tempor maximus. Vivamus ipsum lacus, consequat eu elit vel, sodales rhoncus augue. Aliquam ipsum diam, blandit sit amet libero malesuada, mattis ultrices enim. Suspendisse venenatis eu mauris nec auctor. Morbi ex lacus, bibendum et sapien a, aliquet cursus enim. Donec et aliquam odio. Maecenas eleifend, justo in sollicitudin lobortis, arcu velit bibendum nunc, viverra hendrerit velit sapien a velit. </p>
+				</article>
+				
+				<!-- PASEK BOCZNY -->
+				<aside>
+					<img src="zdjecie.jpg" alt="zdjęcie" id="zdjecie" />
+					
+					<form id="form">
+						<table>
+							<tr>
+								<td>kolor tła:</td>
+								<td>
+									<select name="tlo" id="tlo">
+										<option value="#CEE6FE">#CEE6FE</option>
+										<option value="#BEFAA2">#BEFAA2</option>
+										<option value="#FEB6D1">#FEB6D1</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>dodaj kolor tła:</td>
+								<td>
+									<input type="text" name="dodaj_kolor" id="dodaj_kolor" /><br/>
+									<input type="button" id="btn_dodaj_kolor" value="dodaj kolor" />
+								</td>
+							</tr>
+							<tr>
+								<td>rozmiar czcionki:</td>
+								<td>
+									<strong id="czcionka_aktualny_rozmiar">13px</strong><br/>
+									<input type="button" id="btn_czcionka_zwieksz" value="zwiększ" />
+									<input type="button" id="btn_czcionka_zmniejsz" value="zmiejsz">
+								</td>
+							</tr>
+							<tr>
+								<td>obraz:</td>
+								<td>
+									<input type="text" name="obraz" id="obraz" /><br/>
+									<input type="button" id="btn_ustaw_obraz" value="ustaw obraz" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</aside>
+				
+				<footer>
+					Jakub Kosakowski ID03P04
+				</footer>
+			</section>			
+		</section>
+	</body>
+</html>
