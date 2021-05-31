@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autorzy>
+	<autor>
+		<id>1</id>
+		<imie>Stanisław</imie>
+		<nazwisko>Lem</nazwisko>
+	</autor>
+	<autor>
+		<id>2</id>
+		<imie>Raymond</imie>
+		<nazwisko>Chandler</nazwisko>
+	</autor>
+	<autor>
+		<id>3</id>
+		<imie>Agatha</imie>
+		<nazwisko>Christie</nazwisko>
+	</autor>
+<autor><id>4</id><imie>Michaił</imie><nazwisko>Bułchakow</nazwisko></autor></autorzy>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<ksiazki>
+	
+	<ksiazka>
+		<id>101</id>
+		<id_autora>1</id_autora>
+		<tytul>Bajki robot&#xF3;w</tytul>
+		<strony>317</strony>
+		<id_rodzaju>1</id_rodzaju>
+	</ksiazka>
+	<ksiazka>
+		<id>102</id>
+		<id_autora>1</id_autora>
+		<tytul>Cyberiada</tytul>
+		<strony>834</strony>
+		<id_rodzaju>1</id_rodzaju>
+	</ksiazka>
+	<ksiazka>
+		<id>103</id>
+		<id_autora>1</id_autora>
+		<tytul>Opowie&#x15B;ci o pilocie Pirxie</tytul>
+		<strony>591</strony>
+		<id_rodzaju>1</id_rodzaju>
+	</ksiazka>
+	<ksiazka>
+		<id>104</id>
+		<id_autora>3</id_autora>
+		<tytul>Morderstwo w Orient Expressie</tytul>
+		<strony>821</strony>
+		<id_rodzaju>2</id_rodzaju>
+	</ksiazka>
+	<ksiazka>
+		<id>105</id>
+		<id_autora>2</id_autora>
+		<tytul>Playback</tytul>
+		<strony>249</strony>
+		<id_rodzaju>2</id_rodzaju>
+	</ksiazka>
+<ksiazka><id>106</id><id_autora>4</id_autora><tytul>Mistrz i Ma&#x142;gorzata</tytul><strony>314</strony><id_rodzaju>3</id_rodzaju></ksiazka></ksiazki>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rodzaje>
+    <rodzaj>
+        <id>1</id>
+        <nazwa>Sci-Fi</nazwa>
+    </rodzaj>
+
+
+<rodzaj><id>2</id><nazwa>Kryminalne</nazwa></rodzaj><rodzaj><id>3</id><nazwa>Fantastyczne</nazwa></rodzaj><rodzaj><id>4</id><nazwa>Przygodowa</nazwa></rodzaj></rodzaje>
