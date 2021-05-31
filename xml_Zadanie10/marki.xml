@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<marki>
+    <marka>
+        <id>1</id>
+        <nazwa>Fiat</nazwa>
+    </marka>
+    <marka>
+        <id>2</id>
+        <nazwa>Volkswagen</nazwa>
+    </marka>
+    <marka>
+        <id>3</id>
+        <nazwa>Mazda</nazwa>
+    </marka>
+    <marka>
+        <id>4</id>
+        <nazwa>Skoda</nazwa>
+    </marka>
+</marki>

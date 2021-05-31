@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<samochody>
+	<samochod>
+		<id>11</id>
+		<marka>1</marka>
+		<model>1</model>
+		<rok>1995</rok>
+		<pojemnosc>1.2</pojemnosc>
+		<typ_silnika>benzyna</typ_silnika>
+		<liczba_poduszek>0</liczba_poduszek>
+		<abs>nie</abs>
+		<esp>nie</esp>
+	</samochod>
+	<samochod>
+		<id>12</id>
+		<marka>2</marka>
+		<model>2</model>
+		<rok>2002</rok>
+		<pojemnosc>1.9</pojemnosc>
+		<typ_silnika>diesel</typ_silnika>
+		<liczba_poduszek>4</liczba_poduszek>
+		<abs>tak</abs>
+		<esp>tak</esp>
+	</samochod>
+	<samochod>
+		<id>13</id>
+		<marka>3</marka>
+		<model>3</model>
+		<rok>1997</rok>
+		<pojemnosc>2</pojemnosc>
+		<typ_silnika>diesel</typ_silnika>
+		<liczba_poduszek>1</liczba_poduszek>
+		<abs>tak</abs>
+		<esp>nie</esp>
+	</samochod>
+	<samochod>
+		<id>14</id>
+		<marka>4</marka>
+		<model>4</model>
+		<rok>2000</rok>
+		<pojemnosc>1.4</pojemnosc>
+		<typ_silnika>benzyna</typ_silnika>
+		<liczba_poduszek>2</liczba_poduszek>
+		<abs>tak</abs>
+		<esp>nie</esp>
+	</samochod>
+</samochody>

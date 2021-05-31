@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<modele>
+    <model>
+        <id>1</id>
+        <nazwa>Punto</nazwa>
+    </model>
+    <model>
+        <id>2</id>
+        <nazwa>Passat</nazwa>
+    </model>
+    <model>
+        <id>3</id>
+        <nazwa>626</nazwa>
+    </model>
+    <model>
+        <id>4</id>
+        <nazwa>Fabia</nazwa>
+    </model>
+</modele>
